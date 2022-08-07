@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Longuinho</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <main>
+        <article class="main-profile-pic-container">
+            <section class="profile-pic-container">
+                <a href="home.html"><img src="assets/img/profile-pic.jpg" alt="Foto de Perfil" class="profile-pic" id="profile-pic" onclick="clickInPicture()"></a>
+                <button id="btn-return-pic" onclick="displayProfAgain()">Return-pic</button><br>
+                <!--<p id="welcome">Bem vindo ao meu website</p>-->
+            </section>
+        </article>
+    </main>
+</body>
+<script>
+    function clickInPicture(){
+        document.getElementById('profile-pic').style.display = "none";
+        document.getElementById('btn-return-pic').style.display = "inline-block";
+        document.getElementById('welcome').style.display = "block";
+        
+    }
+    function displayProfAgain(){
+        document.getElementById('profile-pic').style.display = "inline-block";
+        document.getElementById('btn-return-pic').style.display = "none";
+        document.getElementById('welcome').style.display = "none";
+    }
+</script>
+</html>
