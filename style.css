@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{ /* Váriaveis em css */
+    --cor01: #657A95;
+    --cor02: #42033D;
+    --cor03: #80AB82;
+    --cor04: #7DCD85;
+    --cor05: #C2E1C2;
+    --font-p: 'Poppins', sans-serif;
+    --font-p-size: 1em;
+}
+body{
+    font-family: var(--font-p);
+}
+
+    .profile-pic-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    }
+    .profile-pic{
+    margin: auto;
+    width: 30vw;
+    border-radius: 50%;
+    }
+    .profile-pic:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    cursor: pointer;
+    }
+
+    .profile-pic-container > p{
+    display: block;
+    text-align: center;
+    color: var(--cor01);
+    font-family: var(--font-p);
+    font-size: var(--font-p-size);
+    }
+    .profile-pic-container > button {
+    padding: 10px; 
+    background-color: var(--cor02); 
+    border-radius: 5px; 
+    border: 2px var(--cor03) solid;
+    color: var(--cor04);
+    font-family: var(--font-p);
+    font-size: var(--font-p-size);
+    }
+    .profile-pic-container > button:hover{
+    background-color: var(--cor02); 
+    border-radius: 5px; 
+    border: 2px var(--cor01) solid;
+    color: var(--cor01);
+    display: block;
+    margin: 0 0.5rem;
+    animation: flip; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    cursor: pointer;
+    }
+    .profile-pic-container > p, .profile-pic-container > button {
+    display: none;
+    }
+    header > h1{
+        text-align: center;
+    }
+    header > hr{
+        margin: auto;
+        width: 20vw;
+        height: 3px;
+        background-color: black;
+        border: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
+    }
+    li{
+        list-style-type: none;
+    }
+    li:hover{
+        cursor: pointer;
+    }
